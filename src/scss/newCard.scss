@@ -1,0 +1,29 @@
+.card {
+  max-width: 225px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 5px;
+
+  &__remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(8%) sepia(91%) saturate(6717%) hue-rotate(14deg) brightness(81%) contrast(112%);
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
